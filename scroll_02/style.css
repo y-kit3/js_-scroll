@@ -1,0 +1,344 @@
+/*-------------------全体に適用------------------------*/
+
+html * {
+    box-sizing: border-box;
+    padding: 0 0;
+    margin: 0 0;
+}
+  
+body {
+    font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+    margin:0 0 0 0;
+}
+  
+  
+li {
+    list-style-type: none;
+  
+}
+
+/*-------------------全体に適用-(横幅)------------------*/
+
+.wrapper {
+    max-width: 1200px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+/*---------------------header------------------------*/
+header {
+    width:100%;
+    position: fixed;
+    background-color: #fff;
+}
+
+.site-title {
+    padding: 20px 16px;
+    line-height: 1px;
+}
+
+.header-nav {
+    background-color: #333;
+}
+
+.header-nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.header-nav li {
+    font-size: 14px;
+}
+
+
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding:10px 60px 10px 0px;
+    transition-duration: 0.5s;
+}
+
+.header-nav a:hover {
+    background-color: #777;
+   }
+
+.header-nav a:active {
+    color:aqua;
+}
+
+
+
+/*------------------pickup-----------------------*/
+
+#pickup {
+    padding-top: 150px;
+    margin-bottom: 60px;
+}
+
+#pickup ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+#pickup li {
+    width: 32%
+}
+
+#pickup img {
+    width :100%;
+}
+
+#pickup h2 {
+    font-size: 16px;
+    margin: 10px 0 15px 0;
+}
+
+/*readmoreはメインにも使用*/
+
+.readmore {
+    text-align: center;
+}
+
+.readmore a {
+    color : #333333;
+    font-size: 14px;
+}
+
+
+/*----------------mainとside----------------------*/
+
+#main-side {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+/*main*/
+.main {
+    width: 65%;
+}
+
+.contents {
+    margin-bottom: 80px;
+}
+
+.contents-tittle {
+    font-size: 16px;
+    margin: 10px 0 15px 0;
+}
+
+.contents-tittle a {
+    text-decoration: none;
+    color : #333333;
+    font-size: 24px;
+}
+
+.meta ul {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.meta li {
+    margin-right: 20px;
+}
+
+.meta a {
+    text-decoration: none;
+    color : #333333;
+    font-size: 14px;
+}
+
+.contents img {
+    width:100%;
+}
+
+.contents p {
+    color : #333333;
+    font-size: 16px;
+    padding: 10px 40px 30px 40px;
+}
+
+/*side*/
+.side {
+    width: 33%;
+    padding: 20px;
+}
+
+/*side-profile*/
+.profile {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.profile img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.profile h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/*side-Ranking*/
+.Ranking {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.Ranking h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+
+.Ranking li {
+    margin-bottom: 30px;
+}
+
+.Ranking a {
+    text-decoration: none;
+    
+}
+
+.Ranking img {
+    width: 100%;
+}
+
+.Ranking p {
+    color : #333333;
+    font-size: 14px;
+    text-align: left;   
+}
+
+/*side-Arcive*/
+.Archive {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.Archive h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+
+.Archive ul {
+    border-top:  solid 1px #777;
+}
+
+
+.Archive li {
+    text-align: left;
+    border-bottom:  solid 1px #777;
+    font-size: 14px;
+    padding: 20px 20px;
+}
+
+.Archive a {
+    text-decoration: none;
+    color: #333333;
+}
+
+/*----------------footer---------------------*/
+
+footer {
+    background-color: #f7f7f7;
+}
+
+#footer-items {
+  display: flex;
+  justify-content:space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#footer-items .item {
+    width: 30%;
+}
+
+#footer-items .item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+#footer-items .item p {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+/*about*/
+
+#footer-items .about-list ul{
+    margin: 20px 0 20px 0;
+}
+
+#footer-items .about-list li {
+    margin-bottom: 5px;
+    
+
+}
+
+#footer-items .about-list a {
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    padding-left: 12px;
+    color: #333;
+}
+
+.about-list ::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 8px;
+    border-color: transparent transparent transparent #333;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -6px;
+}
+
+/*menu*/
+#footer-items .menu-list{
+    border-bottom: solid 1px #777;
+}
+
+#footer-items .menu-list li {
+    padding: 15px 15px;
+    border-top: solid 1px #777;
+    text-align: left;
+
+}
+
+#footer-items .menu-list a {
+    text-decoration: none;
+    color :#333333; 
+    font-size: 14px; 
+}
+
+#footer-logo p {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0 10px 0;
+    color :#333333;
+}
+
+
+
+
